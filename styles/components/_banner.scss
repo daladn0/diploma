@@ -1,0 +1,87 @@
+.banner {
+}
+
+.banner__inner {
+  position: relative;
+  border-radius: rempx(4);
+  height: rempx(400);
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+  }
+}
+
+.banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: rempx(4);
+  overflow: hidden;
+}
+
+.banner__content {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner__title {
+  color: var(--cl-white);
+  text-align: center;
+}
+
+.banner__description {
+  color: var(--cl-white);
+  text-align: center;
+  margin-top: rempx(50);
+  opacity: 0.7;
+}
+
+.banner__socials {
+  position: absolute;
+  background: var(--cl-white);
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  padding: rempx(12);
+  border-radius: rempx(4);
+  box-shadow: 0 5px 15px 0 rgba($color: #000000, $alpha: 0.15);
+}
+
+.socials__link {
+  width: rempx(24);
+  cursor: pointer;
+}
+
+.socials .socials__link + .socials__link {
+  margin-top: rempx(12);
+}
+
+.socials__icon {
+  width: rempx(24);
+  height: rempx(24);
+
+  transition: opacity var(--transition);
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,49 @@
+.goods {
+  margin-top: rempx(200);
+}
+
+.goods__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.goods__title {
+  margin-bottom: rempx(24);
+}
+
+.goods__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: rempx(30);
+}
+
+.goods__item {
+  cursor: pointer;
+}
+
+.goods__wrap-img {
+  position: relative;
+  border-radius: rempx(12);
+  height: rempx(261);
+  overflow: hidden;
+  transition: opacity var(--transition);
+  width: 100%;
+}
+.goods__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.goods__item:hover .goods__wrap-img {
+  opacity: 0.9;
+}
+
+.goods__item-title {
+  margin-top: rempx(24);
+  margin-bottom: rempx(8);
+}
+
+.goods__item-descr {
+  opacity: 0.5;
+}
