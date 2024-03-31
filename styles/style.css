@@ -617,6 +617,12 @@ body {
   margin-top: 4.5rem;
 }
 
+.footer__socials {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .footer__inner {
   display: flex;
   align-items: center;
