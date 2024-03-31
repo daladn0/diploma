@@ -426,6 +426,11 @@ body {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
+.socials_horizontal {
+  flex-direction: row;
+  box-shadow: none;
+}
+
 .socials__link {
   width: 1.5rem;
   cursor: pointer;
@@ -433,6 +438,11 @@ body {
 
 .socials .socials__link + .socials__link {
   margin-top: 0.75rem;
+}
+
+.socials_horizontal .socials__link + .socials__link {
+  margin-top: 0;
+  margin-left: 1.75rem;
 }
 
 .socials__icon {
@@ -493,6 +503,84 @@ body {
 
 .goods__item-descr {
   opacity: 0.5;
+}
+
+.feedback {
+  margin-top: 12.5rem;
+}
+
+.feedback__inner {
+  display: flex;
+  flex-direction: column;
+  max-width: 37.5rem;
+}
+
+.feedback__title {
+  text-align: center;
+}
+
+.feedback__form {
+  margin-top: 3rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background: #f2f2f2;
+  border-radius: 0.75rem;
+  padding: 1.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.form__label {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  background: var(--cl-white);
+  padding: 0.875rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form__textarea {
+  resize: none;
+  border: none;
+  height: 12.5rem;
+  outline: none;
+}
+
+.form__button {
+  margin: 0 auto;
+  margin-top: 0.75rem;
+}
+
+.button {
+  background-color: rgb(8, 4, 32);
+  color: rgb(224, 224, 224);
+  padding: 1rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  transition: background-color var(--transition);
+}
+
+.button:hover {
+  background-color: rgb(26, 20, 57);
+}
+
+.footer {
+  background-color: var(--cl-light);
+  padding: 1.5rem 0;
+  margin-top: 4.5rem;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
