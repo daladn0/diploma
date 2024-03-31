@@ -6,6 +6,10 @@
   border-radius: rempx(4);
   height: rempx(400);
 
+  @include mobile() {
+    height: 100vh;
+  }
+
   &::after {
     content: "";
 

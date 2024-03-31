@@ -13,12 +13,19 @@ html {
 body {
   font-family: var(--font);
   font-size: rempx(16);
+  background: var(--cl-white);
 }
 
 ._container {
   max-width: rempx(1434);
   margin-left: auto;
   margin-right: auto;
+
+  @include mobile() {
+    max-width: 100%;
+    padding-left: rempx(20);
+    padding-right: rempx(20);
+  }
 }
 
 .overlay {

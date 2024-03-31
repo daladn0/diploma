@@ -1,11 +1,20 @@
 .header {
   padding-top: rempx(44);
   padding-bottom: rempx(44);
+
+  @include mobile() {
+    padding-top: rempx(20);
+    padding-bottom: rempx(20);
+  }
 }
 
 .header__inner {
   display: flex;
   align-items: center;
+
+  @include mobile() {
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
@@ -16,6 +25,10 @@
 .header__search {
   flex: 1;
   margin-right: rempx(35);
+
+  @include mobile() {
+    display: none;
+  }
 }
 
 .search {
@@ -39,6 +52,12 @@
   top: 50%;
   right: rempx(18);
   transform: translateY(-50%);
+}
+
+.header__data {
+  @include mobile() {
+    display: none;
+  }
 }
 
 .header__data-first {
