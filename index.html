@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meat market diploma</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="_container header__inner">
+        <!-- Logo -->
+        <a href="/" class="logo header__logo">
+          <img class="logo__icon" alt="logo" src="./public/icons/logo.svg" />
+        </a>
+
+        <!-- Search bar -->
+        <div class="search header__search">
+          <input
+            type="text"
+            class="search__input h16"
+            placeholder="Що хочете знайти?"
+          />
+
+          <img
+            class="search__icon"
+            src="/public/icons/search.svg"
+            role="presentation"
+          />
+        </div>
+
+        <!-- Company data -->
+        <div class="header__data header__data-first">
+          <div class="h12 header__data-key">Адрес компанії</div>
+          <a
+            href="tel:380961231234"
+            class="h14 header__data-value header__data-tel"
+            >+380 (96) 123 1234</a
+          >
+        </div>
+
+        <div class="header__data">
+          <div class="h12 header__data-key">Час роботи</div>
+          <div class="h14 header__data-value">9:00–22:00</div>
+        </div>
+
+        <!-- Shopping cart -->
+        <button class="header__cart cart">
+          <img
+            class="cart__icon"
+            src="/public/icons/shoping-cart.svg"
+            role="presentation"
+          />
+          <div class="cart__amount">1</div>
+        </button>
+      </div>
+    </header>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
