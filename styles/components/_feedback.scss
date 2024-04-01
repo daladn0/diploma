@@ -40,6 +40,10 @@
   border-radius: rempx(8);
   margin-top: rempx(16);
   margin-bottom: rempx(24);
+
+  @include mobile() {
+    font-size: rempx(16);
+  }
 }
 
 .form__textarea {

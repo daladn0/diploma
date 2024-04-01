@@ -626,6 +626,11 @@ body {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 1024px) {
+  .form__input {
+    font-size: 1rem;
+  }
+}
 
 .form__textarea {
   resize: none;
