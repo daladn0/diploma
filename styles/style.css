@@ -406,6 +406,7 @@ body {
 @media (max-width: 1024px) {
   .banner__inner {
     height: 100vh;
+    padding: 0;
   }
 }
 .banner__inner::after {
@@ -435,6 +436,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media (max-width: 1024px) {
+  .banner__content {
+    width: 95%;
+  }
 }
 
 .banner__title {
@@ -466,6 +472,14 @@ body {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
+@media (max-width: 1024px) {
+  .banner__socials {
+    top: 100%;
+    left: 50%;
+    flex-direction: row;
+  }
+}
+
 .socials_horizontal {
   flex-direction: row;
   box-shadow: none;
@@ -478,6 +492,12 @@ body {
 
 .socials .socials__link + .socials__link {
   margin-top: 0.75rem;
+}
+@media (max-width: 1024px) {
+  .socials .socials__link + .socials__link {
+    margin-top: 0;
+    margin-left: 0.75rem;
+  }
 }
 
 .socials_horizontal .socials__link + .socials__link {
@@ -497,6 +517,11 @@ body {
 .goods {
   margin-top: 12.5rem;
 }
+@media (max-width: 1024px) {
+  .goods {
+    margin-top: 6.25rem;
+  }
+}
 
 .goods__inner {
   display: flex;
@@ -506,11 +531,23 @@ body {
 .goods__title {
   margin-bottom: 1.5rem;
 }
+@media (max-width: 1024px) {
+  .goods__title {
+    text-align: center;
+  }
+}
 
 .goods__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1.875rem;
+}
+@media (max-width: 1024px) {
+  .goods__list {
+    column-gap: 0rem;
+    row-gap: 3.75rem;
+    grid-template-columns: 1fr;
+  }
 }
 
 .goods__item {
@@ -547,6 +584,11 @@ body {
 
 .feedback {
   margin-top: 12.5rem;
+}
+@media (max-width: 1024px) {
+  .feedback {
+    margin-top: 6.25rem;
+  }
 }
 
 .feedback__inner {
@@ -622,11 +664,28 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+@media (max-width: 1024px) {
+  .footer__socials {
+    display: none;
+  }
+}
 
 .footer__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+  .footer__logo {
+    max-width: 6.25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__copy {
+    font-size: 0.875rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

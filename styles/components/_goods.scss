@@ -1,5 +1,9 @@
 .goods {
   margin-top: rempx(200);
+
+  @include mobile() {
+    margin-top: rempx(100);
+  }
 }
 
 .goods__inner {
@@ -9,12 +13,22 @@
 
 .goods__title {
   margin-bottom: rempx(24);
+
+  @include mobile() {
+    text-align: center;
+  }
 }
 
 .goods__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: rempx(30);
+
+  @include mobile() {
+    column-gap: rempx(0);
+    row-gap: rempx(60);
+    grid-template-columns: 1fr;
+  }
 }
 
 .goods__item {

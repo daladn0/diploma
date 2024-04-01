@@ -1,5 +1,9 @@
 .feedback {
   margin-top: rempx(200);
+
+  @include mobile() {
+    margin-top: rempx(100);
+  }
 }
 
 .feedback__inner {
