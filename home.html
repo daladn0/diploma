@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meat market diploma</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/pages/home.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner _container">
+        <a href="/home.html" class="header__link h12">Наш асортимент</a>
+        <a href="/home.html" class="header__link h12">Як готується мʼясо</a>
+        <img src="/public/icons/logo.svg" class="header__logo" />
+        <a href="/home.html" class="header__link h12">Історія компанії</a>
+        <a href="/home.html" class="header__link h12">Контакти</a>
+      </div>
+    </header>
+
+    <section class="intro overlay">
+      <video
+        class="intro__video"
+        muted
+        autoplay
+        loop
+        src="/public/videos/intro.mp4"
+      ></video>
+      <div class="_container intro__inner">
+        <h2 class="intro__title">Ми піклуємось про ваше здоровля</h2>
+        <button class="intro__button">discover</button>
+      </div>
+
+      <img
+        draggable="false"
+        src="/public/images/home-svg.svg"
+        alt=""
+        class="intro-decorative"
+      />
+    </section>
+
+    <section class="goods">
+      <div class="_container goods__inner">
+        <h2 class="goods__title h40">Вигідні пропозиції</h2>
+
+        <ul class="goods__list">
+          <li class="goods__item">
+            <div class="goods__wrap-img overlay">
+              <img
+                class="goods__img"
+                src="./public/images/steak.jpeg"
+                alt="meat image 1"
+              />
+            </div>
+
+            <div class="goods__item-title h20">Мʼясо для стейка</div>
+            <div class="goods__item-descr h16">
+              Стейк - це шматок м'яса, зазвичай вирізаний із яловичини або іншої
+              м'ясної продукції, який готують на грилі...
+            </div>
+          </li>
+          <li class="goods__item">
+            <div class="goods__wrap-img overlay">
+              <img
+                class="goods__img"
+                src="./public/images/burger.jpeg"
+                alt="meat image 1"
+              />
+            </div>
+
+            <div class="goods__item-title h20">Мʼясо для бургерів</div>
+            <div class="goods__item-descr h16">
+              Бургер - це вид швидкого харчування, який складається з котлети
+              (зазвичай із м'яса), поміщеної в булочку.
+            </div>
+          </li>
+          <li class="goods__item">
+            <div class="goods__wrap-img overlay">
+              <img
+                class="goods__img"
+                src="./public/images/shawarma.jpeg"
+                alt="meat image 1"
+              />
+            </div>
+
+            <div class="goods__item-title h20">Мʼясо для шаурми</div>
+            <div class="goods__item-descr h16">
+              Шаурма - це популярна в українській та близькосхідній кухні
+              страва, яка складається з намаринованого м'яса
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner home__banner">
+      <div class="_container banner__inner">
+        <img
+          class="banner__image"
+          src="./public/images/meat.jpeg"
+          alt="meat picture"
+        />
+
+        <div class="banner__content">
+          <h2 class="banner__title h60">Скидка 20% на мʼясні вироби</h2>
+          <div class="banner__description h18">Акція діє до липня</div>
+        </div>
+
+        <ul class="banner__socials socials">
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="./public/icons/vk.svg"
+              role="presentation"
+            />
+          </li>
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="./public/icons/yt.svg"
+              role="presentation"
+            />
+          </li>
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="./public/icons/fb.svg"
+              role="presentation"
+            />
+          </li>
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="./public/icons/insta.svg"
+              role="presentation"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="history">
+      <div class="history__left">
+        <div class="history__inner">
+          <h2 class="history__title">Українська компанія заснована в 1991</h2>
+          <div class="history__description">
+            Компанія заснована Джоном До в гаражі його будинку в 1991, де
+            почалось виробництво.
+          </div>
+          <button class="history__button">Історія компанії</button>
+        </div>
+      </div>
+      <div class="history__right"></div>
+    </section>
+
+    <section class="partners">
+      <div class="_container partners__inner">
+        <h2 class="partners__title">Наші клієнти:</h2>
+
+        <div class="partners__grid">
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/1-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/2-brand.svg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/3-brand.jpeg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/4-brand.svg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/5-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/6-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/7-brand.jpeg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/8-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/9-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/10-brannd.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/11-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="/public/icons/12-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kaufland_201x_logo.svg/1200px-Kaufland_201x_logo.svg.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="https://i.pinimg.com/originals/a1/c4/04/a1c404bea49c0143058bc4dd9da79d33.jpg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="https://i.pinimg.com/736x/2d/89/f5/2d89f52970cc56673ebc74a57eaec991.jpg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="process">
+      <div class="process__info">
+        <div class="process__title">Найвищі вимоги до гігієни та якості</div>
+        <div class="process__description">
+          Суворе дотримання понадстандартних гігієнічних заходів має для нас
+          першочергове значення. Ми маємо гарантувати, що наші клієнти постійно
+          та щоразу отримують безпечні та здорові продукти. Для нашої компанії
+          чистота та гігієна є головними, а також порядок і система. Повне
+          задоволення кінцевого клієнта є для нас пріоритетом.
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer home__footer">
+      <div class="_container footer__inner">
+        <!-- Logo -->
+        <a href="/" class="logo footer__logo">
+          <img class="logo__icon" alt="logo" src="./public/icons/logo.svg" />
+        </a>
+
+        <!-- Nav -->
+        <ul class="footer__socials socials socials_horizontal">
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="./public/icons/vk.svg"
+              role="presentation"
+            />
+          </li>
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="./public/icons/yt.svg"
+              role="presentation"
+            />
+          </li>
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="./public/icons/fb.svg"
+              role="presentation"
+            />
+          </li>
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="./public/icons/insta.svg"
+              role="presentation"
+            />
+          </li>
+        </ul>
+        <div class="footer__copy">© 2024 ООО «ХоумМаркет»</div>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
