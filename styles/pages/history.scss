@@ -4,7 +4,7 @@
 
 .intro {
   padding-top: 35vh;
-  background: url(/public/images/process-svg.png);
+  background: url(/public/images/history-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -44,4 +44,130 @@
   margin: 0 auto;
   text-align: center;
   margin-top: rempx(120);
+}
+
+.intro__button {
+  color: #e64343;
+  border: 1px solid #e64343;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: rempx(24);
+
+  padding: rempx(20) rempx(28);
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: unset;
+}
+
+.intro__image {
+  width: 100%;
+  aspect-ratio: 16/8;
+  object-fit: cover;
+  object-position: center;
+
+  margin-top: rempx(100);
+}
+
+// Timeline
+.timeline {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+}
+
+.block__left,
+.block__right {
+  width: 50%;
+  padding: rempx(60);
+}
+
+.border {
+  position: relative;
+  border-left: 1px solid #ccc;
+  &:before {
+    content: "";
+
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.block__right:not(.border) {
+  text-align: right;
+}
+
+.block__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.block__year {
+  color: #aa0129;
+  font-size: rempx(36);
+  margin-bottom: rempx(24);
+}
+
+.block__title {
+  font-weight: 400;
+  font-size: rempx(15);
+  color: #222;
+  margin-bottom: rempx(16);
+}
+
+.block__text {
+  font-size: rempx(12);
+  opacity: 0.5;
+}
+
+.future {
+  margin-top: rempx(100);
+  text-align: center;
+}
+
+.future__title {
+  font-size: rempx(42);
+  margin-bottom: rempx(24);
+}
+
+.future__descr {
+  max-width: rempx(300);
+  text-align: center;
+  font-size: rempx(16);
+  margin-bottom: rempx(100);
+  color: #444;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-bottom: rempx(50);
+}
+
+.future__img {
+  width: 100%;
+}
+
+.home__footer {
+  margin-top: 0;
+}
+
+.footer__socials {
+  display: flex;
+}
+
+.footer__socials > * + * {
+  margin-left: rempx(20);
 }

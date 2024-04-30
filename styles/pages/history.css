@@ -360,7 +360,7 @@ body {
 
 .intro {
   padding-top: 35vh;
-  background: url(/public/images/process-svg.png);
+  background: url(/public/images/history-bg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -400,6 +400,127 @@ body {
   margin: 0 auto;
   text-align: center;
   margin-top: 7.5rem;
+}
+
+.intro__button {
+  color: #e64343;
+  border: 1px solid #e64343;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: unset;
+}
+
+.intro__image {
+  width: 100%;
+  aspect-ratio: 16/8;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 6.25rem;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+}
+
+.block__left,
+.block__right {
+  width: 50%;
+  padding: 3.75rem;
+}
+
+.border {
+  position: relative;
+  border-left: 1px solid #ccc;
+}
+.border:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.block__right:not(.border) {
+  text-align: right;
+}
+
+.block__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.block__year {
+  color: #aa0129;
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.block__title {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.block__text {
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+.future {
+  margin-top: 6.25rem;
+  text-align: center;
+}
+
+.future__title {
+  font-size: 2.625rem;
+  margin-bottom: 1.5rem;
+}
+
+.future__descr {
+  max-width: 18.75rem;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 6.25rem;
+  color: #444;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-bottom: 3.125rem;
+}
+
+.future__img {
+  width: 100%;
+}
+
+.home__footer {
+  margin-top: 0;
+}
+
+.footer__socials {
+  display: flex;
+}
+
+.footer__socials > * + * {
+  margin-left: 1.25rem;
 }
 
 /*# sourceMappingURL=history.css.map */
