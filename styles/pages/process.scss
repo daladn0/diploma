@@ -1,0 +1,124 @@
+@import "../general.scss";
+@import "../components/index/sticky-header";
+@import "../components/index/footer";
+
+.intro {
+  padding-top: 35vh;
+  background: url(/public/images/process-svg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.intro__inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__label {
+  text-align: center;
+  opacity: 0.35;
+  margin-bottom: rempx(24);
+}
+
+.intro__title {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 40%;
+  text-transform: uppercase;
+  font-size: rempx(38);
+  margin-bottom: rempx(24);
+}
+
+.intro__subtitle {
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: rempx(14);
+  opacity: 0.7;
+}
+
+.intro__video {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: rempx(120);
+}
+
+// Blocks
+
+.blocks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  margin-top: rempx(150);
+}
+
+.block {
+  width: 100%;
+
+  display: flex;
+}
+
+.block:nth-child(4n + 1) {
+  background-color: #aa0129;
+  color: white;
+}
+
+.block:nth-child(4n + 2) {
+  background-color: #5b595a;
+  color: white;
+}
+
+.block:nth-child(4n + 3) {
+  background-color: white;
+  color: black;
+}
+
+.block:nth-child(4n + 4) {
+  background-color: #b0b1b3;
+  color: white;
+}
+
+.block__info {
+  width: 50%;
+  padding: rempx(100);
+  display: flex;
+  flex-direction: column;
+}
+
+.block__num {
+  font-size: rempx(36);
+}
+
+.block__label {
+  margin-top: auto;
+  opacity: 0.6;
+  margin-bottom: rempx(24);
+  text-transform: uppercase;
+  font-size: rempx(14);
+}
+
+.block__text {
+  text-transform: uppercase;
+  font-size: rempx(28);
+  max-width: 70%;
+}
+
+.block__img {
+  aspect-ratio: 1/1;
+  width: 50%;
+  object-fit: cover;
+}
+
+// Footer
+
+.footer__socials {
+  display: flex;
+}
+
+.footer__socials > * + * {
+  margin-left: rempx(18);
+}

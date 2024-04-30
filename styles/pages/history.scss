@@ -1,0 +1,47 @@
+@import "../general.scss";
+@import "../components/index/sticky-header";
+@import "../components/index/footer";
+
+.intro {
+  padding-top: 35vh;
+  background: url(/public/images/process-svg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.intro__inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__label {
+  text-align: center;
+  opacity: 0.35;
+  margin-bottom: rempx(24);
+}
+
+.intro__title {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 40%;
+  text-transform: uppercase;
+  font-size: rempx(38);
+  margin-bottom: rempx(24);
+}
+
+.intro__subtitle {
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: rempx(14);
+  opacity: 0.7;
+}
+
+.intro__video {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: rempx(120);
+}
