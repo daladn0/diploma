@@ -8,6 +8,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  @include mobile() {
+    padding-top: rempx(100);
+    background: none;
+  }
 }
 
 .intro__inner {
@@ -29,6 +34,10 @@
   text-transform: uppercase;
   font-size: rempx(38);
   margin-bottom: rempx(24);
+
+  @include mobile() {
+    max-width: 85%;
+  }
 }
 
 .intro__subtitle {
@@ -44,6 +53,12 @@
   margin: 0 auto;
   text-align: center;
   margin-top: rempx(120);
+
+  @include mobile() {
+    max-width: 100%;
+    width: 100%;
+    margin-top: rempx(50);
+  }
 }
 
 // Blocks
@@ -54,12 +69,20 @@
   flex-direction: column;
 
   margin-top: rempx(150);
+
+  @include mobile() {
+    margin-top: 0;
+  }
 }
 
 .block {
   width: 100%;
 
   display: flex;
+
+  @include mobile() {
+    flex-direction: column;
+  }
 }
 
 .block:nth-child(4n + 1) {
@@ -87,6 +110,11 @@
   padding: rempx(100);
   display: flex;
   flex-direction: column;
+
+  @include mobile() {
+    padding: rempx(24);
+    width: 100%;
+  }
 }
 
 .block__num {
@@ -99,18 +127,30 @@
   margin-bottom: rempx(24);
   text-transform: uppercase;
   font-size: rempx(14);
+
+  @include mobile() {
+    margin-top: rempx(20);
+  }
 }
 
 .block__text {
   text-transform: uppercase;
   font-size: rempx(28);
   max-width: 70%;
+
+  @include mobile() {
+    max-width: 100%;
+  }
 }
 
 .block__img {
   aspect-ratio: 1/1;
   width: 50%;
   object-fit: cover;
+
+  @include mobile() {
+    width: 100%;
+  }
 }
 
 // Footer

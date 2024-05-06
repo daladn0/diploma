@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 :root {
-  --font: "Roboto";
+  --font: "Oswald", serif;
   --cl-black: #000;
   --cl-gray: #c0c0c0;
   --cl-grey: var(--cl-gray);
@@ -283,9 +284,24 @@ body {
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  height: 100px;
+  height: 5rem;
   border-radius: 5px;
-  z-index: 10;
+  z-index: 100;
+}
+@media (max-width: 1024px) {
+  .header {
+    width: 100%;
+    top: 0;
+    border-radius: 0;
+  }
+}
+
+.header.header__static {
+  width: 100%;
+  position: static;
+  top: unset;
+  left: unset;
+  transform: unset;
 }
 
 .header .header__inner {
@@ -294,6 +310,14 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem;
+}
+
+.header.header__static .header__inner {
+  justify-content: center;
+}
+
+.header.header__static .header__inner > * + * {
+  margin-left: 3.75rem;
 }
 
 .header__logo {
@@ -305,6 +329,11 @@ body {
   font-weight: 600;
   color: #333;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .header__link {
+    display: none;
+  }
 }
 .header__link:before {
   content: "";
@@ -323,6 +352,75 @@ body {
   right: unset;
 }
 
+.burger {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: none;
+}
+.burger::before, .burger::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transition: transform var(--transition);
+}
+.burger::before {
+  transform: translateY(-4px);
+}
+.burger::after {
+  transform: translateY(4px);
+}
+@media (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
+}
+
+.burger.active:before {
+  transform: translate(0) rotate(45deg);
+}
+.burger.active:after {
+  transform: translate(0) rotate(-45deg);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: white;
+  position: fixed;
+  top: 4.9375rem;
+  height: calc(100vh - 5.0625rem);
+  width: 100%;
+  overscroll-behavior: none;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity var(--transition), z-index 2s linear;
+}
+
+.menu.active {
+  opacity: 1;
+  z-index: 100;
+  pointer-events: all;
+}
+
+.menu__link {
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+.menu__link + .menu__link {
+  margin-top: 4rem;
+}
+
 .footer {
   background-color: var(--cl-light);
   padding: 1.5rem 0;
@@ -336,7 +434,7 @@ body {
 }
 @media (max-width: 1024px) {
   .footer__socials {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -365,6 +463,12 @@ body {
   background-size: contain;
   background-position: center;
 }
+@media (max-width: 1024px) {
+  .intro {
+    padding-top: 7.5rem;
+    background: none;
+  }
+}
 
 .intro__inner {
   width: 100%;
@@ -385,6 +489,13 @@ body {
   text-transform: uppercase;
   font-size: 2.375rem;
   margin-bottom: 1.5rem;
+}
+@media (max-width: 1024px) {
+  .intro__title {
+    max-width: 95%;
+    font-size: 2rem;
+    margin-bottom: 0rem;
+  }
 }
 
 .intro__subtitle {
@@ -421,12 +532,23 @@ body {
   object-position: center;
   margin-top: 6.25rem;
 }
+@media (max-width: 1024px) {
+  .intro__image {
+    margin-top: 2.125rem;
+    aspect-ratio: 16/12;
+  }
+}
 
 .timeline {
   display: flex;
   flex-direction: column;
   max-width: 60%;
   margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .timeline {
+    max-width: 95%;
+  }
 }
 
 .block {
@@ -438,6 +560,19 @@ body {
 .block__right {
   width: 50%;
   padding: 3.75rem;
+}
+@media (max-width: 1024px) {
+  .block__left,
+  .block__right {
+    padding: 0.625rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .block__left {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .border {
@@ -473,12 +608,23 @@ body {
   font-size: 2.25rem;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 1024px) {
+  .block__year {
+    margin-bottom: 0.5rem;
+    font-size: 1.875rem;
+  }
+}
 
 .block__title {
   font-weight: 400;
   font-size: 0.9375rem;
   color: #222;
   margin-bottom: 1rem;
+}
+@media (max-width: 1024px) {
+  .block__title {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .block__text {
@@ -489,6 +635,11 @@ body {
 .future {
   margin-top: 6.25rem;
   text-align: center;
+}
+@media (max-width: 1024px) {
+  .future {
+    margin-top: 1.875rem;
+  }
 }
 
 .future__title {

@@ -8,6 +8,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+
+  @include mobile() {
+    padding-top: rempx(120);
+    background: none;
+  }
 }
 
 .intro__inner {
@@ -29,6 +34,12 @@
   text-transform: uppercase;
   font-size: rempx(38);
   margin-bottom: rempx(24);
+
+  @include mobile() {
+    max-width: 95%;
+    font-size: rempx(32);
+    margin-bottom: rempx(0);
+  }
 }
 
 .intro__subtitle {
@@ -66,6 +77,11 @@
   object-position: center;
 
   margin-top: rempx(100);
+
+  @include mobile() {
+    margin-top: rempx(34);
+    aspect-ratio: 16/12;
+  }
 }
 
 // Timeline
@@ -74,6 +90,10 @@
   flex-direction: column;
   max-width: 60%;
   margin: 0 auto;
+
+  @include mobile() {
+    max-width: 95%;
+  }
 }
 
 .block {
@@ -85,6 +105,17 @@
 .block__right {
   width: 50%;
   padding: rempx(60);
+
+  @include mobile() {
+    padding: rempx(10);
+  }
+}
+
+.block__left {
+  @include mobile() {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .border {
@@ -121,6 +152,11 @@
   color: #aa0129;
   font-size: rempx(36);
   margin-bottom: rempx(24);
+
+  @include mobile() {
+    margin-bottom: rempx(8);
+    font-size: rempx(30);
+  }
 }
 
 .block__title {
@@ -128,6 +164,10 @@
   font-size: rempx(15);
   color: #222;
   margin-bottom: rempx(16);
+
+  @include mobile() {
+    margin-bottom: rempx(8);
+  }
 }
 
 .block__text {
@@ -138,6 +178,10 @@
 .future {
   margin-top: rempx(100);
   text-align: center;
+
+  @include mobile() {
+    margin-top: rempx(30);
+  }
 }
 
 .future__title {
