@@ -5,9 +5,17 @@
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  height: 100px;
+  height: rempx(80);
   border-radius: 5px;
   z-index: 10;
+}
+
+.header.header__static {
+  width: 100%;
+  position: static;
+  top: unset;
+  left: unset;
+  transform: unset;
 }
 
 .header .header__inner {
@@ -16,6 +24,14 @@
   align-items: center;
   justify-content: space-between;
   padding: rempx(20);
+}
+
+.header.header__static .header__inner {
+  justify-content: center;
+}
+
+.header.header__static .header__inner > * + * {
+  margin-left: rempx(60);
 }
 
 .header__logo {

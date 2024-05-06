@@ -1,0 +1,134 @@
+@import "../general.scss";
+@import "../components/index/sticky-header";
+@import "../components/index/footer";
+
+// Intro
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: calc(100vh - rempx(80));
+  background: url(/public/images/meat-process.jpeg);
+}
+
+// Form
+.form {
+  padding: rempx(48);
+  background: white;
+  height: 85%;
+  width: fit-content;
+  min-width: rempx(500);
+  margin-right: 20%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form__label {
+  font-size: rempx(23);
+  margin-bottom: rempx(20);
+}
+
+.form__input {
+  width: 100%;
+  padding: rempx(10) 0;
+  border-bottom: 1px solid #333;
+  font-size: rempx(14);
+}
+
+.form__tip {
+  font-size: rempx(10);
+}
+
+.form__button {
+  background-color: #aa0129;
+  color: white;
+  width: fit-content;
+  padding: rempx(16) rempx(16);
+  text-transform: uppercase;
+  transition: background-color 0.2s linear;
+}
+
+.form__button:hover {
+  background-color: #7b0521;
+}
+
+// Contacts
+.contacts {
+  margin-top: rempx(80);
+}
+
+.contacts__inner {
+  max-width: 80%;
+}
+
+.contacts__title {
+  font-size: rempx(32);
+  font-weight: 300;
+  margin-bottom: rempx(26);
+}
+
+.contacts__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: rempx(50);
+}
+
+.card__image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.card__title {
+  font-size: rempx(16);
+  margin-bottom: rempx(16);
+  margin-top: rempx(12);
+}
+
+.card__descr {
+  display: block;
+  font-weight: 300;
+  font-size: rempx(12);
+  margin-bottom: rempx(8);
+}
+
+.card__detail {
+  display: flex;
+  align-items: center;
+  font-size: rempx(12);
+  margin-top: rempx(14);
+  transition: opacity var(--transition);
+}
+
+a.card__detail:hover {
+  opacity: 0.5;
+}
+
+.detail-icon {
+  width: rempx(10);
+  margin-right: rempx(8);
+}
+
+// Map
+.contact__map {
+  width: 100%;
+  height: rempx(500);
+
+  margin-top: rempx(100);
+}
+
+// Footer
+.home__footer {
+  margin-top: 0;
+}
+
+.footer__socials {
+  display: flex;
+}
+
+.footer__socials > * + * {
+  margin-left: rempx(20);
+}

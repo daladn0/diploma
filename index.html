@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meat market diploma</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="./styles/pages/index.css" />
+    <link rel="stylesheet" href="./styles/pages/home.css" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,101 +16,35 @@
     />
   </head>
   <body>
-    <!-- Header -->
     <header class="header">
-      <div class="_container header__inner">
-        <!-- Logo -->
-        <a href="/home.html" class="logo header__logo">
-          <img class="logo__icon" alt="logo" src="./public/icons/logo.svg" />
-        </a>
-
-        <!-- Search bar -->
-        <div class="search header__search">
-          <input
-            type="text"
-            class="search__input h16"
-            placeholder="Що хочете знайти?"
-          />
-
-          <img
-            class="search__icon"
-            src="./public/icons/search.svg"
-            role="presentation"
-          />
-        </div>
-
-        <!-- Company data -->
-        <div class="header__data header__data-first">
-          <div class="h12 header__data-key">Адрес компанії</div>
-          <a
-            href="tel:380961231234"
-            class="h14 header__data-value header__data-tel"
-            >+380 (96) 123 1234</a
-          >
-        </div>
-
-        <div class="header__data">
-          <div class="h12 header__data-key">Час роботи</div>
-          <div class="h14 header__data-value">9:00–22:00</div>
-        </div>
-
-        <!-- Shopping cart -->
-        <button class="header__cart cart">
-          <img
-            class="cart__icon"
-            src="./public/icons/shoping-cart.svg"
-            role="presentation"
-          />
-          <div class="cart__amount">1</div>
-        </button>
+      <div class="header__inner _container">
+        <a href="/home.html" class="header__link h12">Наш асортимент</a>
+        <a href="/process.html" class="header__link h12">Як готується мʼясо</a>
+        <img src="../public/icons/logo.svg" class="header__logo" />
+        <a href="/home.html" class="header__link h12">Історія компанії</a>
+        <a href="/home.html" class="header__link h12">Контакти</a>
       </div>
     </header>
 
-    <!-- Banner -->
-    <section class="banner">
-      <div class="_container banner__inner">
-        <img
-          class="banner__image"
-          src="./public/images/meat.jpeg"
-          alt="meat picture"
-        />
-
-        <div class="banner__content">
-          <h2 class="banner__title h60">Скидка 20% на мʼясні вироби</h2>
-          <div class="banner__description h18">Акція діє до липня</div>
-        </div>
-
-        <ul class="banner__socials socials">
-          <li class="socials__link">
-            <img
-              class="socials__icon"
-              src="./public/icons/vk.svg"
-              role="presentation"
-            />
-          </li>
-          <li class="socials__link">
-            <img
-              class="socials__icon"
-              src="./public/icons/yt.svg"
-              role="presentation"
-            />
-          </li>
-          <li class="socials__link">
-            <img
-              class="socials__icon"
-              src="./public/icons/fb.svg"
-              role="presentation"
-            />
-          </li>
-          <li class="socials__link">
-            <img
-              class="socials__icon"
-              src="./public/icons/insta.svg"
-              role="presentation"
-            />
-          </li>
-        </ul>
+    <section class="intro overlay">
+      <video
+        class="intro__video"
+        muted
+        autoplay
+        loop
+        src="../public/videos/intro.mp4"
+      ></video>
+      <div class="_container intro__inner">
+        <h2 class="intro__title">Ми піклуємось про ваше здоровля</h2>
+        <button class="intro__button">discover</button>
       </div>
+
+      <img
+        draggable="false"
+        src="../public/images/home-svg.svg"
+        alt=""
+        class="intro-decorative"
+      />
     </section>
 
     <section class="goods">
@@ -122,7 +56,7 @@
             <div class="goods__wrap-img overlay">
               <img
                 class="goods__img"
-                src="./public/images/steak.jpeg"
+                src="../public/images/steak.jpeg"
                 alt="meat image 1"
               />
             </div>
@@ -137,7 +71,7 @@
             <div class="goods__wrap-img overlay">
               <img
                 class="goods__img"
-                src="./public/images/burger.jpeg"
+                src="../public/images/burger.jpeg"
                 alt="meat image 1"
               />
             </div>
@@ -152,7 +86,7 @@
             <div class="goods__wrap-img overlay">
               <img
                 class="goods__img"
-                src="./public/images/shawarma.jpeg"
+                src="../public/images/shawarma.jpeg"
                 alt="meat image 1"
               />
             </div>
@@ -167,48 +101,199 @@
       </div>
     </section>
 
-    <section class="feedback">
-      <div class="feedback__inner _container">
-        <h2 class="feedback__title h40">Пропозиція на роботу</h2>
+    <!-- Banner -->
+    <section class="banner home__banner">
+      <div class="_container banner__inner">
+        <img
+          class="banner__image"
+          src="../public/images/meat.jpeg"
+          alt="meat picture"
+        />
 
-        <form class="form feedback__form">
-          <label class="form__label">
-            Імʼя:
-            <input placeholder="Joe schmoe" type="text" class="form__input" />
-          </label>
-          <label class="form__label">
-            Бажана посада:
-            <input placeholder="Бухгалтер" type="text" class="form__input" />
-          </label>
-          <label class="form__label">
-            Бажаний оклад (грн):
-            <input placeholder="25000" type="text" class="form__input" />
-          </label>
-          <label class="form__label">
-            Досвід:
-            <input placeholder="2 роки" type="text" class="form__input" />
-          </label>
-          <label class="form__label">
-            Про себе:
-            <textarea
-              placeholder="Напишіть про себе.."
-              type="text"
-              class="form__input form__textarea"
-            ></textarea>
-          </label>
+        <div class="banner__content">
+          <h2 class="banner__title h60">Скидка 20% на мʼясні вироби</h2>
+          <div class="banner__description h18">Акція діє до липня</div>
+        </div>
 
-          <button id="form-button" class="form__button button">
-            Відправити
-          </button>
-        </form>
+        <ul class="banner__socials socials">
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="../public/icons/vk.svg"
+              role="presentation"
+            />
+          </li>
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="../public/icons/yt.svg"
+              role="presentation"
+            />
+          </li>
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="../public/icons/fb.svg"
+              role="presentation"
+            />
+          </li>
+          <li class="socials__link">
+            <img
+              class="socials__icon"
+              src="../public/icons/insta.svg"
+              role="presentation"
+            />
+          </li>
+        </ul>
       </div>
     </section>
 
-    <footer class="footer">
+    <section class="history">
+      <div class="history__left">
+        <div class="history__inner">
+          <h2 class="history__title">Українська компанія заснована в 1991</h2>
+          <div class="history__description">
+            Компанія заснована Джоном До в гаражі його будинку в 1991, де
+            почалось виробництво.
+          </div>
+          <button class="history__button">Історія компанії</button>
+        </div>
+      </div>
+      <div class="history__right"></div>
+    </section>
+
+    <section class="partners">
+      <div class="_container partners__inner">
+        <h2 class="partners__title">Наші клієнти:</h2>
+
+        <div class="partners__grid">
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/1-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/2-brand.svg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/3-brand.jpeg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/4-brand.svg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/5-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/6-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/7-brand.jpeg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/8-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/9-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/10-brannd.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/11-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="../public/icons/12-brand.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kaufland_201x_logo.svg/1200px-Kaufland_201x_logo.svg.png"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="https://i.pinimg.com/originals/a1/c4/04/a1c404bea49c0143058bc4dd9da79d33.jpg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+          <div class="partners__grid-item">
+            <img
+              src="https://i.pinimg.com/736x/2d/89/f5/2d89f52970cc56673ebc74a57eaec991.jpg"
+              alt=""
+              class="partners__item"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="process">
+      <div class="process__info">
+        <div class="process__title">Найвищі вимоги до гігієни та якості</div>
+        <div class="process__description">
+          Суворе дотримання понадстандартних гігієнічних заходів має для нас
+          першочергове значення. Ми маємо гарантувати, що наші клієнти постійно
+          та щоразу отримують безпечні та здорові продукти. Для нашої компанії
+          чистота та гігієна є головними, а також порядок і система. Повне
+          задоволення кінцевого клієнта є для нас пріоритетом.
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer home__footer">
       <div class="_container footer__inner">
         <!-- Logo -->
         <a href="/" class="logo footer__logo">
-          <img class="logo__icon" alt="logo" src="./public/icons/logo.svg" />
+          <img class="logo__icon" alt="logo" src="../public/icons/logo.svg" />
         </a>
 
         <!-- Nav -->
@@ -216,28 +301,28 @@
           <li class="socials__link">
             <img
               class="socials__icon"
-              src="./public/icons/vk.svg"
+              src="../public/icons/vk.svg"
               role="presentation"
             />
           </li>
           <li class="socials__link">
             <img
               class="socials__icon"
-              src="./public/icons/yt.svg"
+              src="../public/icons/yt.svg"
               role="presentation"
             />
           </li>
           <li class="socials__link">
             <img
               class="socials__icon"
-              src="./public/icons/fb.svg"
+              src="../public/icons/fb.svg"
               role="presentation"
             />
           </li>
           <li class="socials__link">
             <img
               class="socials__icon"
-              src="./public/icons/insta.svg"
+              src="../public/icons/insta.svg"
               role="presentation"
             />
           </li>

@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 :root {
-  --font: "Roboto";
+  --font: "Oswald", serif;
   --cl-black: #000;
   --cl-gray: #c0c0c0;
   --cl-grey: var(--cl-gray);
@@ -374,114 +375,138 @@ body {
   }
 }
 
-.intro {
-  padding-top: 35vh;
-  background: url(/public/images/process-svg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+.intro__suptitle {
+  margin-bottom: 1rem;
+  font-size: 0.6875rem;
+  color: #858585;
+  text-transform: uppercase;
 }
 
 .intro__inner {
-  width: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.intro__label {
-  text-align: center;
-  opacity: 0.35;
-  margin-bottom: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 5rem);
+  background: url(/public/images/process-svg.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 
 .intro__title {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 40%;
-  text-transform: uppercase;
-  font-size: 2.375rem;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
 }
 
-.intro__subtitle {
-  max-width: 60%;
-  text-align: center;
+.intro__description {
+  max-width: 50%;
   margin: 0 auto;
-  font-size: 0.875rem;
+  text-align: center;
   opacity: 0.7;
+  line-height: 1.5;
 }
 
-.intro__video {
-  max-width: 70%;
+.intro__button {
+  color: #e64343;
+  border: 1px solid #e64343;
+  width: fit-content;
   margin: 0 auto;
-  text-align: center;
-  margin-top: 7.5rem;
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: unset;
 }
 
-.blocks {
-  width: 100%;
+.process {
+  margin-top: 3.125rem;
+}
+
+.process__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6.25rem;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  margin-top: 9.375rem;
+  align-items: center;
+  text-align: center;
+  padding: 1.875rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.16);
 }
 
-.block {
-  width: 100%;
+.card__title {
+  text-transform: uppercase;
+}
+
+.card__description {
+  line-height: 1.5;
+  color: #858585;
+  font-weight: 300;
+  max-width: 50%;
+  margin: 2rem 0;
+}
+
+.card__price {
+  text-transform: uppercase;
+}
+
+.hire {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6.25rem;
+  width: 100%;
+  height: 100vh;
+  background: url(/public/images/concern.webp);
 }
 
-.block:nth-child(4n+1) {
+.form {
+  padding: 3rem;
+  background: white;
+  height: 85%;
+  width: fit-content;
+  min-width: 31.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form__label {
+  font-size: 1.4375rem;
+  margin-bottom: 1.25rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: 0.625rem 0;
+  border-bottom: 1px solid #333;
+  font-size: 0.875rem;
+}
+
+.form__tip {
+  font-size: 0.625rem;
+}
+
+.form__button {
+  width: 100%;
   background-color: #aa0129;
   color: white;
-}
-
-.block:nth-child(4n+2) {
-  background-color: #5b595a;
-  color: white;
-}
-
-.block:nth-child(4n+3) {
-  background-color: white;
-  color: black;
-}
-
-.block:nth-child(4n+4) {
-  background-color: #b0b1b3;
-  color: white;
-}
-
-.block__info {
-  width: 50%;
-  padding: 6.25rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.block__num {
-  font-size: 2.25rem;
-}
-
-.block__label {
-  margin-top: auto;
-  opacity: 0.6;
-  margin-bottom: 1.5rem;
+  padding: 1rem 1rem;
   text-transform: uppercase;
-  font-size: 0.875rem;
+  transition: background-color 0.2s linear;
 }
 
-.block__text {
-  text-transform: uppercase;
-  font-size: 1.75rem;
-  max-width: 70%;
+.form__button:hover {
+  background-color: #7b0521;
 }
 
-.block__img {
-  aspect-ratio: 1/1;
-  width: 50%;
-  object-fit: cover;
-}
-
-.home__footer {
+.footer {
   margin-top: 0;
 }
 
@@ -490,7 +515,7 @@ body {
 }
 
 .footer__socials > * + * {
-  margin-left: 1.125rem;
+  margin-left: 1.5rem;
 }
 
-/*# sourceMappingURL=process.css.map */
+/*# sourceMappingURL=employment.css.map */
