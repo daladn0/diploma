@@ -10,6 +10,12 @@
   width: 100%;
   height: calc(100vh - rempx(80));
   background: url(/public/images/meat-process.jpeg);
+
+  @include mobile() {
+    margin-top: rempx(79);
+    padding-top: rempx(30);
+    background: white;
+  }
 }
 
 // Form
@@ -24,11 +30,25 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include mobile() {
+    height: 100%;
+    min-width: unset;
+    padding: rempx(32);
+    padding-top: 0;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .form__label {
   font-size: rempx(23);
   margin-bottom: rempx(20);
+
+  @include mobile() {
+    margin-bottom: rempx(20);
+    text-align: center;
+  }
 }
 
 .form__input {
@@ -40,6 +60,9 @@
 
 .form__tip {
   font-size: rempx(10);
+  @include mobile() {
+    font-size: rempx(18);
+  }
 }
 
 .form__button {
@@ -49,6 +72,12 @@
   padding: rempx(16) rempx(16);
   text-transform: uppercase;
   transition: background-color 0.2s linear;
+
+  pointer-events: none;
+
+  @include mobile() {
+    width: 100%;
+  }
 }
 
 .form__button:hover {
@@ -58,10 +87,18 @@
 // Contacts
 .contacts {
   margin-top: rempx(80);
+
+  @include mobile() {
+    margin-top: rempx(0);
+  }
 }
 
 .contacts__inner {
   max-width: 80%;
+
+  @include mobile() {
+    max-width: 100%;
+  }
 }
 
 .contacts__title {
@@ -74,6 +111,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: rempx(50);
+
+  @include mobile() {
+    grid-template-columns: 1fr;
+    gap: rempx(100);
+  }
 }
 
 .card__image {
@@ -118,6 +160,10 @@ a.card__detail:hover {
   height: rempx(500);
 
   margin-top: rempx(100);
+
+  @include mobile() {
+    margin-top: rempx(50);
+  }
 }
 
 // Footer
