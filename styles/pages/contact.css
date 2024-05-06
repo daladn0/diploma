@@ -462,7 +462,7 @@ body {
   justify-content: flex-end;
   width: 100%;
   height: calc(100vh - 5rem);
-  background: url(/public/images/meat-process.jpeg);
+  background: url(../../public/images/meat-process.jpeg);
 }
 @media (max-width: 1024px) {
   .intro {

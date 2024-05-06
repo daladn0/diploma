@@ -9,7 +9,7 @@
   justify-content: flex-end;
   width: 100%;
   height: calc(100vh - rempx(80));
-  background: url(/public/images/meat-process.jpeg);
+  background: url(../../public/images/meat-process.jpeg);
 
   @include mobile() {
     margin-top: rempx(79);
