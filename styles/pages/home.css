@@ -786,7 +786,7 @@ body {
 .history__right {
   height: 100%;
   width: 50%;
-  background: url(/public/images/owner.jpeg);
+  background: url(./public/images/owner.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -860,7 +860,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(/public/images/concern.webp);
+  background: url(./public/images/concern.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
