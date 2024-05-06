@@ -11,7 +11,7 @@
   transform: translateX(-50%);
 
   @include mobile() {
-    display: none;
+    display: none !important;
   }
 }
 

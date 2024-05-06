@@ -7,7 +7,7 @@
   height: rempx(400);
 
   @include mobile() {
-    height: 100vh;
+    height: rempx(700);
     padding: 0;
   }
 
@@ -91,6 +91,8 @@
 .socials__link {
   width: rempx(24);
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .socials .socials__link + .socials__link {
@@ -98,7 +100,7 @@
 
   @include mobile() {
     margin-top: 0;
-    margin-left: rempx(12);
+    margin-left: rempx(22);
   }
 }
 
